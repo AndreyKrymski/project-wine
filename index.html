@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="container bacground-image" id="catalog">
+      <div class="container-context">
+        <div class="flex-title">
+          <p>Новокузнечный переулок 4/1</p>
+          <p>8 (812) 123-45-67</p>
+        </div>
+        <nav>
+          <table class="table-desktop">
+            <tr>
+              <td><a href="#">Каталог</a></td>
+              <td><a href="#postavka">Доставка</a></td>
+              <td><a href="#collection">Коллекции</a></td>
+              <td><a href="#contact">Контакты</a></td>
+            </tr>
+          </table>
+          <table class="table-mobile">
+            <tr>
+              <td><a href="#">Каталог</a></td>
+            </tr>
+            <tr>
+              <td><a href="#mobile-postavka">Доставка</a></td>
+            </tr>
+            <tr>
+              <td><a href="#collection">Коллекции </a></td>
+            </tr>
+            <tr>
+              <td><a href="#mobile-number">Контакты</a></td>
+            </tr>
+          </table>
+        </nav>
+        <div class="degustation">
+          <button type="button" onclick="getCarta()" class="btn btn-yellow cl-white">винная карта</button>
+          <button type="button" onclick="getDegustation()" class="btn btn-yellow cl-white">дегустация</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="container fon-section-black" id="collection">
+    <div class="container-context mr100">
+      <div class="wine-section frame-bord">
+        <h2>Лучший вкус, это вкус долголетнего вина</h2>
+        <div class="line"></div>
+        <div class="text-wine">
+          <p>Вызревание вина является процессом, как правило улучшающим качество вина, что является отличительной чертой этого продукта от многих других. В то время как остальные продукты не могут храниться без охлаждения длительное время, вино может храниться годами, при этом возможно изменение его цвета и вкуса таким образом, что оно становится более приятным для употребления. Процесс вызревания зависит от сортов винограда, региона его выращивания, стиля виноделия и может потребовать значительного времени и финансовых вложений. Выдержанное вино ценится выше, но подавляющее большинство винной продукции не выдерживается. Считается, что 90 % произведённого вина предназначено для употребления в течение года, у 5–10 % производимого в мире вина вкус становится лучше через год, и лишь у 1 % — спустя 5–10 лет.</p>
+        </div>
+        <img src="src/images/bocal.png" alt="wine">
+      </div>
+    </div>
+  </section>
+  <main class="container fon-main" id="main">
+    <div class="container-context mr80">
+      <div class="body-main main-bord">
+        <div class="flex-container">
+          <div class="text">
+            <h3>Новинки коллекций</h3>
+            <h2>Март 1980 Урожай Марселя</h2>
+            <div class="line"></div>
+            <div class="main-text">
+              <p>Только натуральные дрожжи. Полу-углекислая мацерация целыми гроздями в нержавеющих емкостях или трапециевидных бочках - длительная, в течение 4-24 дней, в зависимости от типа вина.</p>
+            </div>
+            <table class="table-wine-map" id="collection2020">
+              <tr>
+                <td>
+                  <p class="t-montserrat">2020</p>
+                </td>
+                <td>
+                  <p class="t-playfair"> Colli Euganei Bianco Ca' Lustra 2020</p>
+                  <p class="t-montserrat">Красочная бутылка вина из Марселя</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t-montserrat">1982</p>
+                </td>
+                <td>
+                  <p class="t-playfair"> Colli Euganei Bianco Ca' 1982</p>
+                  <p class="t-montserrat">Красочная бутылка вина из Венгрии</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t-montserrat">1978</p>
+                </td>
+                <td>
+                  <p class="t-playfair"> Colli Ca' Lustra 1978</p>
+                  <p class="t-montserrat">Красочная бутылка вина из Австрии</p>
+                </td>
+              </tr>
+            </table>
+            <div class="main-text">
+              <p>
+                Выдержка в нержавеющих емкостях около двух месяцев или в старых бургундских бочках-пьес (3-13 летних) или бочках-фьют в течение минимум девяти месяцев.
+              </p>
+            </div>
+            <button type="button" onclick="getMore()" class="btn btn-yellow cl-white">узнать подробнее</button>
+    
+          </div>
+          <div class="image">
+            <img src="src/images/slider.png" alt="wines">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="container fon-section-black" id="degustation">
+    <div class="container-context mr100">
+      <div class="degustation-section frame-bord">
+        <div class="title-degustation">
+          <img src="src/images/heading.png" alt="heading">
+        </div>
+        <div class="forboard">
+          <div class="line pt-30"></div>
+          <div class="degustation-text">
+            <p>Чтобы вино разговорилось и выдало все свои секреты, профессиональные дегустаторы пользуются простой системой, которую вполне способен освоить любой желающий. Доставайте правильный бокал , наполняйте его на треть, и погнали!</p>
+          </div>
+          <form class="submit-form">
+            <div class="input-form">
+              <input type="text" placeholder="Имя" name="name">
+              <input type="tel" placeholder="Телефон" name="tel">
+            </div>
+            <input class="butik" type="text" name="addres" placeholder="Бутик на Невском 103">
+            <button type="submit" class="btn-degustation">записаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container fon-section-yellow">
+    <div class="container-context mr-50 ">
+      <table class="footer-table">
+        <tr class="lowercasse">
+          <td><a href="#main">Главная</a></td>
+          <td><a href="#catalog">Каталог</a></td>
+          <td><a href="#postavka">Поставщики</a></td>
+          <td><a href="#collection">Коллекции</a></td>
+          <td><a href="#degustation">Дегустация</a></td>
+          <td><a href="#collection2020">Коллекция 2020</a></td>
+          <td><a href="#contact">Контакты</a></td>
+        </tr>
+        <tr class="uppeprcase">
+          <td colspan="2"><a href="https://freelancehunt.com/showcase/work/vinnyiy-butik-corte/1496824.html" target="_blank">винный бутик LE CORTE</a></td>
+          <td colspan="2" id="contact"><a href="#">8 (812) 123-45-67</a></td>
+          <td colspan="2">
+            <div class="flex-icon">
+              <a href="https://www.youtube.com/watch?v=R4Qs2Gj-nSg" target="_blank"><img src="src/images/carbon_logo-youtube.png" alt="youtube"></a>
+              <a href="https://vk.com/winemusic" target="_blank"><img src="src/images/entypo-social_vk.png" alt="vk"></a>
+              <a href="https://www.facebook.com/sbs.wine/" target="_blank"><img src="src/images/bx_bxl-facebook.png" alt="facebook"></a>
+            </div>
+          </td>
+          <td id="postavka"><a href="https://winestyle.ru/" target="_blank">© le-corte.ru</a></td>
+        </tr>
+      </table>
+
+      <table class="mobile-footer-table">
+          <tr>
+            <td><a href="#main">Главная</a></td>
+            <td rowspan="2"><a href="https://freelancehunt.com/showcase/work/vinnyiy-butik-corte/1496824.html" target="_blank">винный бутик LE CORTE</a></td>
+          </tr>
+          <tr>
+            <td><a href="#catalog">Каталог</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#postavka">Поставщики</a></td>
+            <td rowspan="2" id="mobile-number"><a href="#">8 (812) 123-45-67</a></td>
+          </tr>
+          <tr>
+            <td><a href="#collection">Коллекции</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#degustation">Дегустация</a></td>
+            <td rowspan="2">
+              <div class="flex-icon">
+                <a href="https://www.youtube.com/watch?v=R4Qs2Gj-nSg" target="_blank"><img src="src/images/carbon_logo-youtube.png" alt="youtube"></a>
+                <a href="https://vk.com/winemusic" target="_blank"><img src="src/images/entypo-social_vk.png" alt="vk"></a>
+                <a href="https://www.facebook.com/sbs.wine/" target="_blank"><img src="src/images/bx_bxl-facebook.png" alt="facebook"></a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#collection2020">Коллекция 2020</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#contact">Контакты</a></td>
+            <td rowspan="2" id="mobile-postavka"><a href="https://winestyle.ru/" target="_blank">© le-corte.ru</a></td>
+          </tr>
+
+      </table>
+      <br>
+    </div>
+  </footer>
+  <script src="src/scripts/index.js"></script>
+</body>
+</html>

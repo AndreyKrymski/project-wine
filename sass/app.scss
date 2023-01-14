@@ -1,0 +1,650 @@
+@import 'reset.css';
+
+
+$montserrat: 'Montserrat', sans-serif;
+$playfair: 'Playfair Display', serif;
+$yellow: #99862A;
+$white: #FFFFFF;
+$fonmain: #E6E3C4;
+$frame-color: #C4C4C4;
+$tetx2section: #000000;
+$black: #282828;
+
+h2 {
+  font-family: $playfair;
+  font-size: 36px;
+  line-height: 54px;
+  color: $white;
+}
+
+p {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+}
+
+/*body {
+  max-width: 1920px;
+  margin: 0 auto;
+}*/
+@mixin bacgrondImage($url) {
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-context {
+  margin: 0 405px;
+}
+
+/*_________________________________header + nav__________________________________ */
+.bacground-image {
+  @include bacgrondImage("../src/images/bgc.png");
+}
+
+.flex-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-weight: 500;
+  }
+}
+nav {
+  padding-bottom: 583px;
+}
+@mixin table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  tr {
+    td {
+      padding: 10px;
+      a {
+        font-family: $montserrat;
+        font-size: 16px;
+        color: $white;
+      }
+    }
+  }
+  color: $white;
+}
+
+@mixin border-top-bottom {
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+}
+
+.table-desktop {
+  @include table();
+  @include border-top-bottom();
+  tr {
+    td {
+      border-left: 1px solid $white;
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+}
+
+
+.table-mobile {
+  display: none;
+  @include table();
+  @include border-top-bottom();
+}
+
+
+.degustation {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 150px;
+  
+}
+
+.btn {
+  padding: 15px 30px;
+  gap: 10px;
+  width: 203px;
+  height: 50px;
+}
+
+.btn-yellow {
+  background-color: $yellow;
+}
+
+.cl-white {
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: $white;
+  text-transform: uppercase;
+}
+/* _________________________________________________wine section ___________________________*/
+@mixin fon ($name, $color) {
+  .fon-section-#{$name} {
+    background-color: $color;
+  };
+}
+@include fon("black", $black);
+
+.frame-bord {
+  border: 3px solid $white;
+}
+.mr100 {
+  padding: 100px 0;
+}
+
+.wine-section {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  h2 {
+    margin-top: 60px;
+  }
+  img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 60px;
+  }
+}
+
+.line {
+  width: 160px;
+  border-bottom: 1px solid $white;
+  margin: 40px auto;
+}
+
+.text-wine {
+  width: 80%;
+  margin: 40px auto;
+}
+/* _________________________________________main__________________________________________*/
+.fon-main {
+  background-color: $fonmain;
+}
+
+.mr80 {
+  padding: 80px 0;
+}
+
+.main-bord {
+  border-top: 1px solid $yellow;
+  border-bottom: 1px solid $yellow;
+}
+
+.body-main {
+  padding: 60px 0;
+}
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+}
+.image {
+  img {
+    width: 540px;
+    height: 758px;
+  }
+}
+
+.text {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  h3 {
+    font-family: $montserrat;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h2 {
+    color: $black;
+  }
+  .line {
+    border-bottom: 1px solid $black;
+    margin: 0;
+  }
+  .main-text {
+    p {
+      color: $black;
+    }
+  }
+  
+  button {
+    width: 254px;
+    height: 50px;
+  }
+}
+
+.table-wine-map {
+  @include table();
+  tr {
+    border-top: 1px solid $black;
+
+    &:first-child{
+      border-top: none;
+    }
+
+    td {
+      border-right: 1px solid $black;
+      &:last-child{
+        border-right: none;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
+  
+}
+
+.t-montserrat {
+  color: $black;
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.t-playfair {
+  color: $black;
+  font-family: $playfair;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/*________________________________________degustation________________________________________*/
+
+.degustation-section {
+  position: relative;
+}
+
+.forboard {
+  width: 541px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: $montserrat;
+  font-size: 16px;
+  color: $white;
+}
+
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  input {
+    width: 45%;
+    height: 30px;
+    border-bottom: 1px solid $white;
+    &::placeholder {
+      font-size: 13px;
+      line-height: 19.5px;
+      color: $white;
+      padding-left: 10px;
+    }
+  }
+}
+
+.butik {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid $white;
+  &::placeholder {
+    font-size: 13px;
+    line-height: 19.5px;
+    color: $white;
+    padding-left: 10px;
+  }
+  margin-bottom: 50px;
+}
+.degustation-text {
+  margin-bottom: 81px;
+}
+
+.btn-degustation {
+  margin-bottom: 80px;
+  border: 1px solid $white;
+  width: 100%;
+  padding: 15px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.title-degustation {
+  position: absolute;
+  top: -7%;
+  left: 26%;
+}
+.degustation-section {
+  margin-top: 50px;
+  &::after {
+    content: url('../src/images/boxca-wine.png');
+    position: absolute;
+    top: -12%;
+    right: -6%;
+  }
+  &::before {
+    content: url('../src/images/vinogr.png');
+    position: absolute;
+    top: -12%;
+    left: -6%;
+  }
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+/* ______________________________________________________footer__________________________________________________________*/
+@include fon("yellow", $yellow);
+
+.mr-50 {
+  padding: 50px 0;
+}
+
+.footer-table {
+  @include table();
+  tr {
+    @include border-top-bottom();
+  }
+  .uppeprcase {
+    td {
+      border-right: 1px solid $white;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.flex-icon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobile-footer-table {
+  display: none;
+  @include table();
+  tr {
+    &:nth-child(2n) {
+      border-bottom: 1px solid $white;
+    }
+    td {
+      border-right: 1px solid $white;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+/* _____________________________________________@media___________________________________*/
+
+@media (max-width: 1851px) {
+  .flex-container {
+    gap: 100px;
+  }
+  .text {
+    gap: 20px;
+  }
+  
+}
+
+@media (max-width: 1801px) {
+  .container-context {
+    margin-right: 205px;
+    margin-left: 205px;
+  }
+
+  .title-degustation {
+    left: 31%;
+  }
+  
+}
+
+@media (max-width: 1601px) {
+  .title-degustation {
+    left: 29%;
+  }
+  
+}
+
+@media (max-width: 1401px) {
+  .container-context {
+    margin: 0 100px;
+  }
+  .flex-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1251px) {
+  .title-degustation {
+    left: 26%;
+  }
+}
+
+@media (max-width: 1161px) {
+  .flex-container {
+    display: block;
+  }
+  .text {
+    margin-bottom: 20px;
+  }
+  .forboard {
+    width: 441px;
+  }
+  .title-degustation {
+    img {
+      width: 349px;
+    }
+  }
+  .title-degustation {
+    left: 31%;
+    top: -5%;
+  }
+}
+
+@media (max-width: 1001px) {
+  .container-context {
+    margin: 0 50px;
+  }
+  nav {
+    padding-bottom: 358px;
+  }
+  .mr100 {
+    padding: 50px 0;
+  }
+  .degustation-section {
+    &::after {
+      content: url('../src/images/boxca-wine130.png');
+      top: -8%;
+      right: -2%;
+    }
+    &::before {
+      content: url('../src/images/vinogr130.png');
+      top: -8%;
+      left: -2%;
+    }
+  }
+}
+
+@media (max-width: 851px) {
+  .title-degustation {
+    left: 25%;
+  }
+  .footer-table {
+    display: none;
+  }
+  .mobile-footer-table {
+    display: table;
+  }
+/*______________________________________________*/
+}
+
+@media (max-width: 751px) {
+  .title-degustation {
+    img {
+      width: 249px;
+    }
+    left: 30%;
+    top: -3.5%;
+  }
+}
+
+@media (max-width: 651px) {
+  .image {
+    img {
+      width: 440px;
+      height: 658px;
+    } 
+  }
+  .forboard {
+    width: 341px;
+  }
+  .input-form {
+    display: block;
+    margin-bottom: 20px;
+    input {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .title-degustation {
+    left: 26%;
+  }
+  .butik {
+    margin-bottom: 30px;
+  }
+  .btn-degustation {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 601px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12.5px;
+  }
+  .container-context {
+    margin: 0 20px;
+  }
+  nav {
+    padding-bottom: 158px;
+  }
+  .line {
+    margin: 20px auto;
+  }
+  .wine-section{
+    img {
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+  }
+  .degustation-section {
+    &::after {
+      content: '';
+    }
+    &::before {
+      content: '';
+    }
+  }
+}
+
+@media (max-width: 501px) {
+  .image {
+    img {
+      width: 340px;
+      height: 358px;
+    } 
+  }
+}
+
+@media (max-width: 451px) {
+  .flex-title {
+    display: block;
+    text-align: center;
+  }
+
+  .degustation {
+    display: block;
+    padding-bottom: 100px;
+    button {
+      width: 100%;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  nav {
+    .table-desktop {
+      display: none;
+    }
+    .table-mobile {
+      display: table;
+    }
+  }
+
+  .mr100 {
+    padding: 20px 0;
+  }
+
+  .image {
+    img {
+      width: 260px;
+      height: 358px;
+    } 
+  }
+  .mr80 {
+    padding: 40px 0;
+  }
+
+  .body-main {
+    padding: 30px 0;
+  }
+
+  .title-degustation {
+    left: 19%;
+  }
+  .degustation-text {
+    margin-bottom: 41px;
+  }
+  .forboard {
+    width: 241px;
+  }
+}
+
+@media (max-width: 376px) {
+  .title-degustation {
+    left: 11%;
+  }
+}
+
+@media (max-width: 336px) {
+  .title-degustation {
+    left: 6%;
+  }
+  .mr-50 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}

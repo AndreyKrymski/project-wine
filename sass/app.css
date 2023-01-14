@@ -1,0 +1,646 @@
+@import 'reset.css';
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+/*body {
+  max-width: 1920px;
+  margin: 0 auto;
+}*/
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-context {
+  margin: 0 405px;
+}
+
+/*_________________________________header + nav__________________________________ */
+.bacground-image {
+  background-image: url("../src/images/bgc.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-title p {
+  font-weight: 500;
+}
+
+nav {
+  padding-bottom: 583px;
+}
+
+.table-desktop {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.table-desktop tr td {
+  padding: 10px;
+}
+.table-desktop tr td a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.table-desktop tr td {
+  border-left: 1px solid #FFFFFF;
+}
+.table-desktop tr td:first-child {
+  border: none;
+}
+
+.table-mobile {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.table-mobile tr td {
+  padding: 10px;
+}
+.table-mobile tr td a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.degustation {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 150px;
+}
+
+.btn {
+  padding: 15px 30px;
+  gap: 10px;
+  width: 203px;
+  height: 50px;
+}
+
+.btn-yellow {
+  background-color: #99862A;
+}
+
+.cl-white {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* _________________________________________________wine section ___________________________*/
+.fon-section-black {
+  background-color: #282828;
+}
+
+.frame-bord {
+  border: 3px solid #FFFFFF;
+}
+
+.mr100 {
+  padding: 100px 0;
+}
+
+.wine-section {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.wine-section h2 {
+  margin-top: 60px;
+}
+.wine-section img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 60px;
+}
+
+.line {
+  width: 160px;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 40px auto;
+}
+
+.text-wine {
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* _________________________________________main__________________________________________*/
+.fon-main {
+  background-color: #E6E3C4;
+}
+
+.mr80 {
+  padding: 80px 0;
+}
+
+.main-bord {
+  border-top: 1px solid #99862A;
+  border-bottom: 1px solid #99862A;
+}
+
+.body-main {
+  padding: 60px 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+}
+
+.image img {
+  width: 540px;
+  height: 758px;
+}
+
+.text {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.text h2 {
+  color: #282828;
+}
+.text .line {
+  border-bottom: 1px solid #282828;
+  margin: 0;
+}
+.text .main-text p {
+  color: #282828;
+}
+.text button {
+  width: 254px;
+  height: 50px;
+}
+
+.table-wine-map {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #FFFFFF;
+}
+.table-wine-map tr td {
+  padding: 10px;
+}
+.table-wine-map tr td a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.table-wine-map tr {
+  border-top: 1px solid #282828;
+}
+.table-wine-map tr:first-child {
+  border-top: none;
+}
+.table-wine-map tr td {
+  border-right: 1px solid #282828;
+}
+.table-wine-map tr td:last-child {
+  border-right: none;
+}
+.table-wine-map tr td p {
+  text-align: left;
+}
+
+.t-montserrat {
+  color: #282828;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.t-playfair {
+  color: #282828;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/*________________________________________degustation________________________________________*/
+.degustation-section {
+  position: relative;
+}
+
+.forboard {
+  width: 541px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.input-form input {
+  width: 45%;
+  height: 30px;
+  border-bottom: 1px solid #FFFFFF;
+}
+.input-form input::-moz-placeholder {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.input-form input:-ms-input-placeholder {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.input-form input::placeholder {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+
+.butik {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 50px;
+}
+.butik::-moz-placeholder {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.butik:-ms-input-placeholder {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+.butik::placeholder {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+
+.degustation-text {
+  margin-bottom: 81px;
+}
+
+.btn-degustation {
+  margin-bottom: 80px;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  padding: 15px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.title-degustation {
+  position: absolute;
+  top: -7%;
+  left: 26%;
+}
+
+.degustation-section {
+  margin-top: 50px;
+}
+.degustation-section::after {
+  content: url("../src/images/boxca-wine.png");
+  position: absolute;
+  top: -12%;
+  right: -6%;
+}
+.degustation-section::before {
+  content: url("../src/images/vinogr.png");
+  position: absolute;
+  top: -12%;
+  left: -6%;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+/* ______________________________________________________footer__________________________________________________________*/
+.fon-section-yellow {
+  background-color: #99862A;
+}
+
+.mr-50 {
+  padding: 50px 0;
+}
+
+.footer-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer-table tr td {
+  padding: 10px;
+}
+.footer-table tr td a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.footer-table tr {
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.footer-table .uppeprcase td {
+  border-right: 1px solid #FFFFFF;
+}
+.footer-table .uppeprcase td:last-child {
+  border: none;
+}
+
+.flex-icon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobile-footer-table {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #FFFFFF;
+}
+.mobile-footer-table tr td {
+  padding: 10px;
+}
+.mobile-footer-table tr td a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.mobile-footer-table tr:nth-child(2n) {
+  border-bottom: 1px solid #FFFFFF;
+}
+.mobile-footer-table tr td {
+  border-right: 1px solid #FFFFFF;
+}
+.mobile-footer-table tr td:last-child {
+  border: none;
+}
+
+/* _____________________________________________@media___________________________________*/
+@media (max-width: 1851px) {
+  .flex-container {
+    gap: 100px;
+  }
+  .text {
+    gap: 20px;
+  }
+}
+@media (max-width: 1801px) {
+  .container-context {
+    margin-right: 205px;
+    margin-left: 205px;
+  }
+  .title-degustation {
+    left: 31%;
+  }
+}
+@media (max-width: 1601px) {
+  .title-degustation {
+    left: 29%;
+  }
+}
+@media (max-width: 1401px) {
+  .container-context {
+    margin: 0 100px;
+  }
+  .flex-container {
+    gap: 50px;
+  }
+}
+@media (max-width: 1251px) {
+  .title-degustation {
+    left: 26%;
+  }
+}
+@media (max-width: 1161px) {
+  .flex-container {
+    display: block;
+  }
+  .text {
+    margin-bottom: 20px;
+  }
+  .forboard {
+    width: 441px;
+  }
+  .title-degustation img {
+    width: 349px;
+  }
+  .title-degustation {
+    left: 31%;
+    top: -5%;
+  }
+}
+@media (max-width: 1001px) {
+  .container-context {
+    margin: 0 50px;
+  }
+  nav {
+    padding-bottom: 358px;
+  }
+  .mr100 {
+    padding: 50px 0;
+  }
+  .degustation-section::after {
+    content: url("../src/images/boxca-wine130.png");
+    top: -8%;
+    right: -2%;
+  }
+  .degustation-section::before {
+    content: url("../src/images/vinogr130.png");
+    top: -8%;
+    left: -2%;
+  }
+}
+@media (max-width: 851px) {
+  .title-degustation {
+    left: 25%;
+  }
+  .footer-table {
+    display: none;
+  }
+  .mobile-footer-table {
+    display: table;
+  }
+  /*______________________________________________*/
+}
+@media (max-width: 751px) {
+  .title-degustation {
+    left: 30%;
+    top: -3.5%;
+  }
+  .title-degustation img {
+    width: 249px;
+  }
+}
+@media (max-width: 651px) {
+  .image img {
+    width: 440px;
+    height: 658px;
+  }
+  .forboard {
+    width: 341px;
+  }
+  .input-form {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .input-form input {
+    width: 100%;
+  }
+  .input-form input:first-child {
+    margin-bottom: 20px;
+  }
+  .title-degustation {
+    left: 26%;
+  }
+  .butik {
+    margin-bottom: 30px;
+  }
+  .btn-degustation {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 601px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12.5px;
+  }
+  .container-context {
+    margin: 0 20px;
+  }
+  nav {
+    padding-bottom: 158px;
+  }
+  .line {
+    margin: 20px auto;
+  }
+  .wine-section img {
+    margin-bottom: 20px;
+  }
+  .wine-section h2 {
+    margin-top: 20px;
+  }
+  .degustation-section::after {
+    content: "";
+  }
+  .degustation-section::before {
+    content: "";
+  }
+}
+@media (max-width: 501px) {
+  .image img {
+    width: 340px;
+    height: 358px;
+  }
+}
+@media (max-width: 451px) {
+  .flex-title {
+    display: block;
+    text-align: center;
+  }
+  .degustation {
+    display: block;
+    padding-bottom: 100px;
+  }
+  .degustation button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .degustation button:last-child {
+    margin-bottom: 0px;
+  }
+  nav .table-desktop {
+    display: none;
+  }
+  nav .table-mobile {
+    display: table;
+  }
+  .mr100 {
+    padding: 20px 0;
+  }
+  .image img {
+    width: 260px;
+    height: 358px;
+  }
+  .mr80 {
+    padding: 40px 0;
+  }
+  .body-main {
+    padding: 30px 0;
+  }
+  .title-degustation {
+    left: 19%;
+  }
+  .degustation-text {
+    margin-bottom: 41px;
+  }
+  .forboard {
+    width: 241px;
+  }
+}
+@media (max-width: 376px) {
+  .title-degustation {
+    left: 11%;
+  }
+}
+@media (max-width: 336px) {
+  .title-degustation {
+    left: 6%;
+  }
+  .mr-50 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}/*# sourceMappingURL=app.css.map */
